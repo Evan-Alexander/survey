@@ -1,3 +1,12 @@
 body {
   background-color: #41daf2;
+  margin: 2.5%;
+}
+
+.well h2 {
+  text-align: center;
+}
+
+.form-control {
+  width: 50%;
 }
