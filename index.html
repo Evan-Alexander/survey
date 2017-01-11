@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Survey</title>
   </head>
   <body>
     <div class="container">
-      <h2>Car troubles</h2>
-      <h3>Tell us a little about what's going on with your car?</h3>
-      <select class="form-control" id="troubles">
-        <option value="no-start">My car doesn't start.</option>
-        <option value="brakes">Brakes are squeeling when I apply them.</option>
-        <option value="leak">I have a windsheild leak.</option>
-        <option value="oil">I need an oil change.</option>
-      </select>
+
+      <div class="well">
+        <h2>Car troubles</h2>
+        <h3>Tell us a little about what's going on with your car?</h3>
+        <select class="form-control" id="troubles">
+          <option value="no-start">My car doesn't start.</option>
+          <option value="brakes">Brakes are squeeling when I apply them.</option>
+          <option value="leak">I have a windsheild leak.</option>
+          <option value="oil">I need an oil change.</option>
+        </select>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2>Just how old is your car?</h2>
+        </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="how-old" value="not-old" checked>
+              Not that old really, wish I had leased this thing.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="how-old" value="vanilla">
+              It's old.  I bought this off of Craigslist in a back parking lot.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="how-old" value="ferns">
+              Older than dirt.  My backseat has ferns growing out of it!
+            </label>
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
   </body>
