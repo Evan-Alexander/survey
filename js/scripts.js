@@ -1,17 +1,32 @@
 // js for dropdown
 
-var troubles = $("#troubles").val();
+
 
 
 
 // js for radio
 
-var howOld = $("input:radio[name=how-old]:checked").val();
+
 
 // js for calendar
 
-var date = $("#born").val();
+
 
 // js for color picker
 
-var favoriteColor = $("#color").val();
+
+
+// JavaScript to capture form information when form is submitted:
+
+$(document).ready(function() {
+  $("form#some-form").submit(function(event) {
+  var troublesInput = $("#troubles").val();
+  var howOldInput = $("input:radio[name=how-old]:checked").val();
+  var dateInput = $("#born").val();
+  var favoriteColorInput = $("#color").val();
+  var nameInput = $("input#name").val();
+  var phoneInput = paresInt($("input#phone").val());
+  var emailInput = paresInt($("input#email").val());
+  event.preventDefault();
+  });
+});
