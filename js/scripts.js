@@ -1,15 +1,20 @@
 // js for dropdown
+$(document).ready(function() {
+  $("form#troubles").submit(function(event) {
+    var troubles = parseInt($("input#troubles").val());
+    event.preventDefault();
+  });
+});
 
-var beverage = $("#beverage").val();
 
 
 // js for radio
 
-var flavor = $("input:radio[name=flavor]:checked").val();
+var howOld = $("input:radio[name=how-old]:checked").val();
 
 // js for calendar
 
-var dob = $("#born").val();
+var date = $("#born").val();
 
 // js for color picker
 
